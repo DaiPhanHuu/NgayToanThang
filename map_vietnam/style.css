@@ -8,7 +8,6 @@ html,
 body {
   height: 100%;
   width: 100%;
-  font-family: Arial, sans-serif;
 }
 
 body {
@@ -21,16 +20,17 @@ body {
 .header {
   text-align: center;
   padding: 20px;
-  background-color: #fff;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  background-color: #fafafa;
 }
 
 .header h1 {
   font-size: 28px;
   color: #333;
   margin: 0;
+  font-family: "Merriweather", sans-serif;
+  font-weight: 700;
+  font-size: 32px;
 }
-
 
 .main-container {
   flex: 1;
