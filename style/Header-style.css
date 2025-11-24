@@ -112,7 +112,7 @@ header {
     margin-left: 1vw;
 }
 
-.user-profile {
+.user-section {
     display: flex;
     align-items: center;
     gap: 0.3vw;
@@ -120,7 +120,7 @@ header {
     padding-left: 2vw;
 }
 
-.user-profile .avatar {
+.user-section .avatar {
     width: 2.5vw;
     height: 2.5vw;
     border-radius: 50%; 
@@ -128,7 +128,7 @@ header {
     border: 1px solid #ccc; 
 }
 
-.user-profile p {
+.user-section p {
     background-color: #e9ecef;
     border-radius: 20px;
     padding: 0.6vw;

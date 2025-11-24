@@ -21,7 +21,6 @@ body {
     background-color: var(--background-color);
     color: var(--primary-text-color);
     line-height: 1.6;
-    padding: 2rem;
 }
 
 a {
