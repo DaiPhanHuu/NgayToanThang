@@ -100,14 +100,14 @@ body {
     margin-bottom: 24px;
 }
 
-.form-group__label {
+.form-group--label {
     display: block;
     font-size: large;
     font-weight: 500;
     margin-bottom: 12px;
 }
 
-.form-group__input {
+.form-group--input {
     width: 100%;
     padding: 5px;
     font-size: 1rem;
@@ -115,11 +115,11 @@ body {
     border-radius: 8px;
     padding: 8px;
 }
-.form-group__input::placeholder {
+.form-group--input::placeholder {
     color: #AAA;
 }
 
-.form-group__textarea {
+.form-group--textarea {
     width: 100%;
     padding: 16px;
     font-size: 1rem;
@@ -133,11 +133,11 @@ body {
     line-height: 1.6;
 }
 
-.form-group__textarea::placeholder {
+.form-group--textarea::placeholder {
     color: #AAA;
 }
 
-.sidebar__tittle {
+.sidebar--tittle {
     font-size: 1.5rem;
     font-weight: 700;
     margin-bottom: 16px;

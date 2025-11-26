@@ -24,21 +24,30 @@ ul {
 
 .search-bar {
     display: flex;
-    gap: 20px;
-    flex-direction: row;
-    justify-content: flex-end;
     align-items: center;
-    margin: 10px;
+    width: 100%;
+    border: 1px solid #666666;
+    border-radius: 8px;
+    padding: 5px 10px;
+    background-color: white;
+    box-sizing: border-box;
 }
 
 .search-bar input {
-    width: 100%;
-    padding: 8px;
-    border: 1px solid #666666;
-    border-radius: 8px;
+    border: none;
+    outline: none;
+    flex-grow: 1;
+    padding: 5px;
+    background-color: transparent;
 }
+
 .search-bar button{
-    font-size: 25px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    font-size: 18px;
 }
 
 .version {
@@ -95,7 +104,11 @@ ul {
     margin-bottom: 10px; 
 }
 
-.details .history ul li a {
+.details a {
     color: #000;
     font-size: 14px;
+}
+
+.table-content .details .history ul li a:hover {
+    color: blue;
 }
