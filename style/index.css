@@ -330,7 +330,7 @@ body a {
 
 /* MADAM BÌNH */
 
-.People-of-the-Revolution {
+.people-of-the-revolution {
   display: flex;
   width: 99vw;
   height: 80vh;
@@ -342,7 +342,7 @@ body a {
   padding: 20px 0.5vw;
 }
 
-.People-of-the-Revolution-wrapper {
+.people-of-the-revolution-wrapper {
   display: flex;
   width: 90%;
   max-width: 1650px;
@@ -351,18 +351,18 @@ body a {
   align-items: stretch;
 }
 
-.People-of-the-Revolution-column {
+.people-of-the-revolution-column {
   width: 100%;
   flex-grow: 1;
   padding: none;
 }
-.People-of-the-Revolution-column img {
+.people-of-the-revolution-column img {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
 
-.People-of-the-Revolution .caption {
+.people-of-the-revolution .caption {
   width: 100%;
   font-family: "Inter", sans-serif;
   font-size: 1.1em;
@@ -371,20 +371,20 @@ body a {
   color: #cccccc;
 }
 
-.People-of-the-Revolution .caption h1 {
-  font-family: "Inter", sans-serif;
+.people-of-the-revolution .caption h1 {
+  font-family: 'Inter', sans-serif;
   font-size: 1.8em;
   font-weight: 700;
   color: white;
   text-align: left;
 }
 
-.People-of-the-Revolution .caption p {
+.people-of-the-revolution .caption p {
   font-size: 1em;
   line-height: 1.5;
 }
 
-.People-of-the-Revolution-art-column {
+.people-of-the-revolution-art-column {
   width: 100%;
   max-height: 80vh;
   display: flex;
@@ -392,7 +392,7 @@ body a {
   align-items: stretch;
 }
 
-.People-of-the-Revolution-art-column img {
+.people-of-the-revolution-art-column img {
   width: 100%;
   flex-grow: 1;
   object-fit: cover;
@@ -400,31 +400,31 @@ body a {
 
 /* TÌNH YÊU THỜI CHIẾN */
 
-.Love.Stories.of.the.War {
-  max-width: 1650px;
-  margin: 60px auto 30px auto;
-  padding: 0 0.5vw;
+.love-stories-of-the-war {
+    max-width: 1650px; 
+    margin: 60px auto 30px auto;
+    padding: 0 0.5vw;
 }
 
-.Love.Stories.of.the.War h1 {
-  font-family: "Playball", cursive;
-  font-size: 2.2em;
-  font-weight: 400;
-  margin-bottom: 20px;
-  color: black;
-  display: inline-block;
+.love-stories-of-the-war h1 {
+    font-family: 'Playball', cursive;
+    font-size: 2.2em;
+    font-weight: 400;
+    margin-bottom: 20px;
+    color: black;
+    display: inline-block;
 }
 
-.Love.Stories.of.the.War a {
-  text-decoration: none;
-  color: black;
-  font-size: 1em;
-  font-weight: 500;
-  margin-left: 20px;
+.love-stories-of-the-war a {
+    text-decoration: none;
+    color: black; 
+    font-size: 1em;
+    font-weight: 500;
+    margin-left: 20px;
 }
 
-.Love.Stories.of.the.War a:hover {
-  text-decoration: underline;
+.love-stories-of-the-war a:hover {
+    text-decoration: underline;
 }
 .love-story-container {
   width: 100%;
@@ -463,7 +463,7 @@ body a {
 
 /* NHỮNG CON SỐ */
 
-.Numbers-dont-lie {
+.numbers-dont-lie {
   width: 99vw;
   background-color: #2f3640;
   color: white;
@@ -472,8 +472,8 @@ body a {
   margin-bottom: 40px;
 }
 
-.Numbers-dont-lie h1 {
-  font-family: "Playball", cursive;
+.numbers-dont-lie h1 {
+  font-family: 'Playball', cursive;
   font-size: 2.5em;
   font-weight: 400;
   margin-bottom: 10px;
@@ -484,11 +484,11 @@ body a {
   max-width: 60vw;
 }
 
-.Numbers-dont-lie a {
-  text-decoration: none;
+.numbers-dont-lie a {
+text-decoration: none;
 }
 
-.Numbers-dont-lie > p {
+.numbers-dont-lie > p {
   max-width: 800px;
   margin: 0 auto 40px auto;
   font-size: 1em;
@@ -501,7 +501,7 @@ body a {
   margin: 0 auto;
 }
 
-.Numbers-dont-lie .number-item {
+.numbers-dont-lie .number-item {
   display: inline-block;
   width: 30%;
   text-align: center;
@@ -509,20 +509,20 @@ body a {
   vertical-align: top;
 }
 
-.Numbers-dont-lie .number-item h2 {
+.numbers-dont-lie .number-item h2 {
   font-size: 2.2em;
   font-weight: 800;
   color: #ffc312;
   margin-bottom: 5px;
 }
 
-.Numbers-dont-lie .number-item p {
+.numbers-dont-lie .number-item p {
   font-size: 0.9em;
   font-weight: 500;
   line-height: 1.3;
 }
 
-.Numbers-dont-lie .numbers-img {
+.numbers-dont-lie .numbers-img {
   width: 100%;
   max-width: 1000px;
   height: auto;
@@ -533,7 +533,7 @@ body a {
 
 /* GIAI ĐOẠN LỊCH SỬ */
 
-.Historical-stage {
+.historical-stage {
   position: relative;
   width: 80vw;
   max-width: 1650px;
@@ -541,7 +541,7 @@ body a {
   padding: 0 0.5vw;
 }
 
-.Historical-stage h1 {
+.historical-stage h1{
   text-align: center;
   font-family: "Pinyon Script", cursive;
   font-size: 2.5em;
