@@ -328,6 +328,31 @@ body a {
   padding: 0 10px;
 }
 
+/* HIỆU ỨNG DOTS */
+.gw-pagination {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.gw-dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: #ccc;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.gw-dot.active {
+  background-color: #333;
+  transform: scale(1.2);
+}
+
+.gw-dot:hover {
+  background-color: #666;
+}
 /* MADAM BÌNH */
 
 .people-of-the-revolution {
@@ -372,7 +397,7 @@ body a {
 }
 
 .people-of-the-revolution .caption h1 {
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   font-size: 1.8em;
   font-weight: 700;
   color: white;
@@ -401,30 +426,30 @@ body a {
 /* TÌNH YÊU THỜI CHIẾN */
 
 .love-stories-of-the-war {
-    max-width: 1650px; 
-    margin: 60px auto 30px auto;
-    padding: 0 0.5vw;
+  max-width: 1650px;
+  margin: 60px auto 30px auto;
+  padding: 0 0.5vw;
 }
 
 .love-stories-of-the-war h1 {
-    font-family: 'Playball', cursive;
-    font-size: 2.2em;
-    font-weight: 400;
-    margin-bottom: 20px;
-    color: black;
-    display: inline-block;
+  font-family: "Playball", cursive;
+  font-size: 2.2em;
+  font-weight: 400;
+  margin-bottom: 20px;
+  color: black;
+  display: inline-block;
 }
 
 .love-stories-of-the-war a {
-    text-decoration: none;
-    color: black; 
-    font-size: 1em;
-    font-weight: 500;
-    margin-left: 20px;
+  text-decoration: none;
+  color: black;
+  font-size: 1em;
+  font-weight: 500;
+  margin-left: 20px;
 }
 
 .love-stories-of-the-war a:hover {
-    text-decoration: underline;
+  text-decoration: underline;
 }
 .love-story-container {
   width: 100%;
@@ -473,7 +498,7 @@ body a {
 }
 
 .numbers-dont-lie h1 {
-  font-family: 'Playball', cursive;
+  font-family: "Playball", cursive;
   font-size: 2.5em;
   font-weight: 400;
   margin-bottom: 10px;
@@ -485,7 +510,7 @@ body a {
 }
 
 .numbers-dont-lie a {
-text-decoration: none;
+  text-decoration: none;
 }
 
 .numbers-dont-lie > p {
@@ -541,7 +566,7 @@ text-decoration: none;
   padding: 0 0.5vw;
 }
 
-.historical-stage h1{
+.historical-stage h1 {
   text-align: center;
   font-family: "Pinyon Script", cursive;
   font-size: 2.5em;
