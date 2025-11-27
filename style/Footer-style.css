@@ -7,7 +7,7 @@
 /* Footer - code */
 
 footer {
-    width: 100vw;
+    width: 90%;
     height: auto;
     opacity: 1;
     margin: 1vw;
@@ -17,7 +17,7 @@ footer {
 .main-footer {
     display: flex;
     justify-content: space-between;
-    width: 100vw;
+    width: 100%;
     height: auto;
 }
 
@@ -87,11 +87,15 @@ footer {
 }
 
 .footer-link {
-    padding-right: 5vw;
+    margin-right: 50px;
 }
 
 .footer-menu {
     margin: 20px;
+}
+
+.footer-menu h4{
+    border-bottom: 2px solid #cc0000;
 }
 
 .footer-menu ul {
@@ -110,11 +114,13 @@ footer {
 
 .footer-menu a:hover {
     color: blue;
+    font-weight: bold;
 }
 
 .footer-link h4{
     margin: 20px;
     padding: 0;
+    border-bottom: 2px solid #cc0000;
 }
 
 .footer-link ul {
@@ -135,4 +141,210 @@ footer {
 
 .footer-link a:hover {
     color: blue;
+    font-weight: bold;
+}
+@media (min-width: 768px) and (max-width: 1080px) {
+    footer {
+        width: 95%;
+        margin: 1vw auto;
+    }
+
+    .main-footer {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto auto;
+        gap: 30px;
+        padding: 20px 0;
+    }
+
+    .footer-about {
+        grid-column: 1 / -1;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-logo {
+        width: 50%;
+        max-width: 350px;
+        margin-bottom: 15px;
+    }
+
+    .footer-gray-text {
+        font-size: 20px;
+        margin: 10px 0;
+    }
+
+    .social-media {
+        text-align: center;
+        margin: 15px 0;
+    }
+
+    .social-media a {
+        padding: 8px;
+        font-size: 1.1em;
+    }
+
+    .contact-info {
+        text-align: center;
+    }
+
+    .contact-info p {
+        font-size: 15px;
+        margin: 10px 0;
+    }
+
+    .copy-right {
+        text-align: center;
+        font-size: 13px;
+        margin-top: 15px;
+    }
+
+    .footer-menu,
+    .footer-link {
+        margin: 10px 20px;
+        text-align: left;
+    }
+
+    .footer-menu h4,
+    .footer-link h4 {
+        font-size: 1.1em;
+        margin: 10px 0 15px 0;
+        padding-bottom: 8px;
+        border-bottom: 2px solid #cc0000;
+    }
+
+    .footer-menu ul,
+    .footer-link ul {
+        margin: 15px 0;
+    }
+
+    .footer-menu li,
+    .footer-link li {
+        margin: 15px 0;
+    }
+}
+
+@media (min-width: 360px) and (max-width: 767px) {
+    footer {
+        width: 100%;
+        margin: 0;
+        padding: 20px 15px;
+    }
+
+    .main-footer {
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+    }
+
+    .footer-about {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .footer-logo {
+        width: 60%;
+        max-width: 250px;
+        margin-bottom: 12px;
+    }
+
+    .footer-gray-text {
+        font-size: 18px;
+        line-height: 140%;
+        margin: 10px 0;
+        padding: 0 10px;
+    }
+
+    .social-media {
+        text-align: center;
+        margin: 15px 0;
+        font-size: 0.95em;
+    }
+
+    .social-media span {
+        display: block;
+        margin-bottom: 10px;
+    }
+
+    .social-media a {
+        padding: 10px;
+        font-size: 1.3em;
+        margin: 0 5px;
+    }
+
+    .contact-info {
+        text-align: center;
+        width: 100%;
+        padding: 0 10px;
+    }
+
+    .contact-info p {
+        font-size: 14px;
+        margin: 10px 0;
+        line-height: 150%;
+        word-break: break-word;
+    }
+
+    .contact-info .label {
+        display: inline-block;
+        font-weight: 600;
+        min-width: 60px;
+    }
+
+    .copy-right {
+        text-align: center;
+        font-size: 12px;
+        margin: 15px 0 10px;
+        line-height: 140%;
+    }
+
+    .footer-menu,
+    .footer-link {
+        width: 100%;
+        margin: 0;
+        padding: 20px 15px;
+        background-color: #f9f9f9;
+        border-radius: 8px;
+    }
+
+    .footer-menu h4,
+    .footer-link h4 {
+        font-size: 1.15em;
+        margin: 0 0 15px 0;
+        padding-bottom: 10px;
+        border-bottom: 2px solid #cc0000;
+        text-align: center;
+    }
+
+    .footer-menu ul,
+    .footer-link ul {
+        margin: 0;
+        padding: 0;
+        text-align: center;
+    }
+
+    .footer-menu li,
+    .footer-link li {
+        margin: 12px 0;
+        padding: 8px 0;
+        border-bottom: 1px dotted #ddd;
+    }
+
+    .footer-menu li:last-child,
+    .footer-link li:last-child {
+        border-bottom: none;
+    }
+
+    .footer-menu a,
+    .footer-link a {
+        font-size: 0.95em;
+        display: block;
+        padding: 5px;
+    }
+
 }

@@ -1,5 +1,5 @@
 * {
-  margin: 0px 50px 0px 50px;
+  margin: 0;
   padding: 0;
   box-sizing: border-box;
   max-width: 100%;
@@ -32,7 +32,6 @@ body a {
   margin: 12px 0.3vw 24px 0.3vw;
   gap: 2vw;
   max-width: 1650px;
-  max-height: 80vh;
   margin-left: auto;
   margin-right: auto;
   align-items: stretch;
@@ -206,9 +205,115 @@ body a {
   color: #999;
 }
 
+@media (min-width: 768px) and (max-width: 1024px) {
+  .front-page {
+    flex-direction: column;
+    align-items: center;
+    max-height: none;
+  }
+  .slider {
+    display: block;
+    width: 100%;
+    max-height: none;
+    object-fit: cover;
+    align-items: center;
+    object-position: center;
+    margin: 0;
+    margin-bottom: 24px;
+  }
+  .slide-item {
+    display: block;
+    aspect-ratio: 16 / 10;
+    align-self: center;
+    height: auto;
+    overflow: hidden;
+    border-radius: 10px;
+  }
+  .slider img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 10px;
+  }
+  .slide-item-1-caption {
+    font-size: 3em;
+    top: 40px;
+    right: 40px;
+  }
+  .news {
+    width: 60%;
+    max-height: none;
+  }
+  .news-main-item{
+    display: none;
+  }
+  .news-item-content {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  justify-content: center;
+  text-align: left;
+  vertical-align: middle;
+}
+  .news-item p{
+    display: inline-block;
+    vertical-align: middle;
+  }
+}
+
+@media (min-width: 360px) and (max-width: 767px) {
+  .front-page {
+    flex-direction: column;
+    align-items: center;
+    max-height: none;
+  }
+  .slider {
+    display: block;
+    width: 100%;
+    max-height: none;
+    object-fit: cover;
+    align-items: center;
+    object-position: center;
+    margin: 0;
+    margin-bottom: 24px;
+  }
+  .slide-item {
+    display: block;
+    align-self: center;
+    height: auto;
+    overflow: hidden;
+    border-radius: 10px;
+  }
+  .slider img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 10px;
+  }
+  .slide-item-1-caption {
+    font-size: 3em;
+    top: 40px;
+    right: 40px;
+  }
+  .news {
+    width: 60%;
+    max-height: none;
+  }
+  .news-main-item{
+    display: none;
+  }
+  .news-item p{
+    display: inline-block;
+    vertical-align: middle;
+  }
+}
+
 /* NHÀ VĂN LỖI LẠC*/
 
 .great-writers {
+
   position: relative;
   width: 90vw;
   max-width: 1650px;
@@ -328,15 +433,32 @@ body a {
   padding: 0 10px;
 }
 
+@media (min-width: 768px) and (max-width: 1024px) {
+  .writer-item{
+    width: 45%;
+  }
+  .writer-item:nth-child(n+4){
+    display:none;
+  }
+}
+
+@media (min-width: 360px) and (max-width: 767px) {
+  .writer-item{
+    width: 45%;
+  }
+  .writer-item:nth-child(n+4){
+    display:none;
+  }
+}
 /* MADAM BÌNH */
 
 .people-of-the-revolution {
   display: flex;
-  width: 99vw;
+  width: 90vw;
   height: 80vh;
   justify-content: center;
   border: #2f3640 1px solid;
-  border-radius: 10px;
+  border-radius: 20px;
   background-color: #2f3640;
   margin: 60px auto;
   padding: 20px 0.5vw;
@@ -346,23 +468,30 @@ body a {
   display: flex;
   width: 90%;
   max-width: 1650px;
-  height: 60vh;
+  height: 50vh;
   margin: auto auto;
   align-items: stretch;
+  justify-content: center;
+  vertical-align: middle;
 }
 
-.people-of-the-revolution-column {
+.people-of-the-revolution-column, .people-of-the-revolution-column-2 {
+  display: flex;
   width: 100%;
   flex-grow: 1;
   padding: none;
 }
-.people-of-the-revolution-column img {
+.people-of-the-revolution-column, .people-of-the-revolution-column-2 img {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
 
 .people-of-the-revolution .caption {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   width: 100%;
   font-family: "Inter", sans-serif;
   font-size: 1.1em;
@@ -380,6 +509,7 @@ body a {
 }
 
 .people-of-the-revolution .caption p {
+  margin-top: 20px;
   font-size: 1em;
   line-height: 1.5;
 }
@@ -398,6 +528,37 @@ body a {
   object-fit: cover;
 }
 
+.people-of-the-revolution a:hover{
+  text-decoration: underline;
+}
+@media (max-width: 1650px) {
+  .people-of-the-revolution-art-column{
+    display: none;
+  }
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  .people-of-the-revolution-column-2{
+    display: none;
+  }
+  .people-of-the-revolution .caption h1{
+    font-size: 2em;
+  }
+  .people-of-the-revolution .caption p{
+    font-size: 1em;
+  }
+}
+
+@media (min-width: 360px) and (max-width: 767px) {
+  .people-of-the-revolution-wrapper{
+    flex-direction: column;
+  }
+  .people-of-the-revolution-column-2{
+    display: none;
+  }
+  .people-of-the-revolution-art-column{
+    display: none;
+  }
+}
 /* TÌNH YÊU THỜI CHIẾN */
 
 .love-stories-of-the-war {
@@ -460,13 +621,46 @@ body a {
   color: #555;
   line-height: 1.4;
 }
+@media (min-width: 768px) and (max-width: 1024px) {
+  .love-story-item h2{
+    font-size: 0.8em;
+  }
+  .love-story-item p{
+    font-size: 0.7em;
+  }
+}
 
+@media (min-width: 360px) and (max-width: 767px) {
+  .love-stories-of-the-war {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  .love-story-container{
+    display: grid;
+    gap: 15px;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .love-story-item{
+    width: 100%;
+    margin-right: 0px;
+  }
+  .love-story-item:nth-child(n+3){
+    display: none;
+  }
+  .love-story-item h2{
+    font-size: 1em;
+  }
+  .love-story-item p{
+    font-size: 0.9em;
+  }
+}
 /* NHỮNG CON SỐ */
 
 .numbers-dont-lie {
   width: 99vw;
-  background-color: #2f3640;
+  background-image: url("../assets/main-tuongniemlietsi.png");
   color: white;
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
   padding: 50px 0;
   text-align: center;
   margin-bottom: 40px;
@@ -521,16 +715,11 @@ text-decoration: none;
   font-weight: 500;
   line-height: 1.3;
 }
-
-.numbers-dont-lie .numbers-img {
-  width: 100%;
-  max-width: 1000px;
-  height: auto;
-  margin-top: 40px;
-  border-radius: 10px;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+@media (min-width: 360px) and (max-width: 767px){
+  .Numbers-dont-lie .number-item{
+    width: 40%;
+  }
 }
-
 /* GIAI ĐOẠN LỊCH SỬ */
 
 .historical-stage {
@@ -620,7 +809,33 @@ text-decoration: none;
 .stage-item a:hover {
   text-decoration: underline;
 }
+@media (min-width: 768px) and (max-width: 1024px) {
+  .stage-container{
+    display: grid;
+    gap: 15px;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .stage-collumn{
+    width: 100%;
+  }
+}
 
+@media (min-width: 360px) and (max-width: 767px) {
+  .stage-container{
+    display: grid;
+    gap: 15px;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .stage-collumn{
+    width: 100%;
+  }
+  .stage-item:nth-child(n+5){
+    display: none;
+  }
+  .stage-item:nth-child(n+4){
+    border-bottom: none;
+  }
+}
 /* PADORAMA */
 .padorama {
   position: relative;
