@@ -237,7 +237,7 @@ function initializeWritersCarousel() {
 // Stats Counter Animation
 function initializeStatsCounter() {
   const numberItems = document.querySelectorAll(
-    ".Numbers-dont-lie .number-item h2"
+    ".numbers-dont-lie .number-item h2"
   );
   let animated = false;
 
@@ -267,7 +267,7 @@ function initializeStatsCounter() {
   function checkScroll() {
     if (animated) return;
 
-    const numbersSection = document.querySelector(".Numbers-dont-lie");
+    const numbersSection = document.querySelector(".numbers-dont-lie");
     if (!numbersSection) return;
 
     const sectionTop = numbersSection.getBoundingClientRect().top;
