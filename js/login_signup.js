@@ -82,6 +82,6 @@ if (submitButton) {
       return;
     }
     // Chuyển hướng đến trang chính nếu hợp lệ
-    window.location.href = '../html/index.html';
+    window.location.href = '../index.html';
   });
 }

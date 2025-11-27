@@ -8,7 +8,6 @@ html,
 body {
   height: 100%;
   width: 100%;
-  font-family: Arial, sans-serif;
 }
 
 body {
@@ -21,16 +20,17 @@ body {
 .header {
   text-align: center;
   padding: 20px;
-  background-color: #fff;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  background-color: #fafafa;
 }
 
 .header h1 {
   font-size: 28px;
   color: #333;
   margin: 0;
+  font-family: "Merriweather", sans-serif;
+  font-weight: 700;
+  font-size: 32px;
 }
-
 
 .main-container {
   flex: 1;
@@ -186,8 +186,24 @@ body {
     grid-column: 1 / -1;
   }
 
+  .stats-list {
+    position: relative;
+    z-index: 2;
+  }
+
   .map-container {
     grid-column: 1 / -1;
+    overflow: visible;
+    z-index: 1;
+  }
+
+  #map {
+    z-index: 1;
+  }
+
+  /* Ẩn legend trên màn hình nhỏ */
+  .legend {
+    display: none !important;
   }
 }
 
@@ -202,6 +218,12 @@ body {
 
   .stats-list {
     grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+  }
+
+  .stat-box {
+    min-height: 100px;
+    padding: 12px 8px;
   }
 
   .stat-box .number {
@@ -211,45 +233,168 @@ body {
   .stat-box .label {
     font-size: 11px;
   }
+
+  .stats-image-container .stats-header-image {
+    max-height: 250px;
+  }
+
+  /* Ẩn legend */
+  .legend {
+    display: none !important;
+  }
 }
 
 @media (max-width: 768px) {
   .header h1 {
-    font-size: 22px;
+    font-size: 20px;
+    line-height: 1.4;
   }
 
   .main-container {
-    gap: 10px;
-    padding: 10px 16px;
+    gap: 12px;
+    padding: 12px 16px;
   }
 
   .stats-grid {
     grid-template-columns: 1fr;
-    gap: 10px;
+    gap: 12px;
   }
 
-  .stats-list {
-    grid-template-columns: 1fr;
+  .stats-image-container {
+    padding: 15px;
+  }
+
+  .stats-image-container .stats-header-image {
+    max-height: 200px;
   }
 
   .stats-image-container .title {
-    text-align: left;
-    font-size: 13px;
+    text-align: justify;
+    font-size: 12px;
+    margin-top: 12px;
+  }
+
+  /* Layout 3 hàng x 2 cột cho stat boxes */
+  .stats-list {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
   }
 
   .stat-box {
-    padding: 12px;
+    padding: 10px 6px;
+    min-height: 85px;
+    aspect-ratio: 1/1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 
   .stat-box .number {
-    font-size: 18px;
+    font-size: 16px;
+    margin-bottom: 6px;
+    font-weight: 700;
   }
 
   .stat-box .label {
-    font-size: 11px;
+    font-size: 10px;
+    line-height: 1.2;
   }
 
   #map {
     min-height: 400px;
+  }
+
+  .map-container {
+    min-height: 400px;
+    overflow: visible;
+  }
+}
+
+@media (max-width: 480px) {
+  .header h1 {
+    font-size: 18px;
+    padding: 0 10px;
+  }
+
+  .main-container {
+    padding: 10px 12px;
+    gap: 10px;
+  }
+
+  .stats-image-container {
+    padding: 12px;
+  }
+
+  .stats-image-container .stats-header-image {
+    max-height: 180px;
+  }
+
+  .stats-image-container .title {
+    font-size: 11px;
+    margin-top: 10px;
+  }
+
+  /* Layout 3 hàng x 2 cột với kích thước nhỏ hơn */
+  .stats-list {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 8px;
+  }
+
+  .stat-box {
+    padding: 8px 4px;
+    min-height: 75px;
+    aspect-ratio: 1/1;
+  }
+
+  .stat-box .number {
+    font-size: 14px;
+    margin-bottom: 4px;
+  }
+
+  .stat-box .label {
+    font-size: 9px;
+    line-height: 1.2;
+  }
+
+  #map {
+    min-height: 350px;
+  }
+
+  .map-container {
+    min-height: 350px;
+    overflow: visible;
+  }
+
+  /* Labels quần đảo nhỏ hơn trên mobile */
+  .island-label.leaflet-tooltip {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 360px) {
+  .header h1 {
+    font-size: 16px;
+  }
+
+  .stat-box {
+    min-height: 70px;
+    padding: 6px 3px;
+  }
+
+  .stat-box .number {
+    font-size: 13px;
+  }
+
+  .stat-box .label {
+    font-size: 8.5px;
+  }
+
+  #map {
+    min-height: 320px;
+  }
+
+  .map-container {
+    min-height: 320px;
+    overflow: visible;
   }
 }
