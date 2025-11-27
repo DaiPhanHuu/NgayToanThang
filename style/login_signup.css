@@ -23,7 +23,7 @@ h2
 }
 
 /* Tab chuyển đổi giữa đăng nhập và đăng ký */
-.tab_warpper {
+.tab-warpper {
   overflow: hidden;
   width: 35vw;
   margin: 48px 32.5vw 0px;
@@ -50,19 +50,19 @@ h2
 }
 
 /* Form đăng nhập và đăng ký */
-.form_warpper{
+.form-warpper{
   width: 35vw;
   margin: 0px 32.5vw 0px;
   overflow: hidden;
   transition: height 0.3s ease-in-out;
 }
-.form_slider{
+.form-slider{
   display: flex;
   width: 200%;
   transition: transform 0.3s ease-in-out, height 0.5s ease-in-out;
   will-change: transform, height;
 }
-#login_form, #signup_form {
+#login-form, #signup-form {
   width: 100%;
   margin: none;
   padding: none;
@@ -84,7 +84,7 @@ h2
   margin: none;
   padding: none;
 }
-#login_form a{
+#login-form a{
   font-family: "Montserrat", sans-serif;
   font-weight: 300;
   font-size: 16px;
@@ -94,12 +94,12 @@ h2
   margin-bottom: 24px;
   margin-right: 5%;
 }
-#login_form a:hover{
+#login-form a:hover{
   text-decoration: underline;
 }
 
 /* Nút tiếp tục */
-.submit_button {
+.submit-button {
   width: 95%;
   text-align: center;
   background-color: #d30304;
@@ -113,13 +113,13 @@ h2
   margin: 10px 0px 20px 0px;
   padding: 12px 20px; 
 }
-.submit_button:hover {
+.submit-button:hover {
   background-color: darkred;
   transition: 0.2s;
 }
 
 /* Đăng nhập bằng mạng xã hội */
-.alt_login{
+.alt-login{
   text-align: center;
   font-family: "Montserrat", sans-serif;
   font-weight: 500;
@@ -128,7 +128,7 @@ h2
   color: black;
   margin-bottom: 32px;
 }
-.alt_login_message::before, .alt_login_message::after{
+.alt-login-message::before, .alt-login-message::after{
   display: inline-block;
   content: "";
   border-top: 2px solid black;
@@ -136,22 +136,22 @@ h2
   width: 30%;
   transform: translateY(-4px);
 }
-.alt_login a{
+.alt-login a{
   color: black;
   text-decoration: none;
   font-weight: 700;
 }
-.alt_login a:hover{
+.alt-login a:hover{
   text-decoration: underline;
 }
-.social_buttons{
+.social-buttons{
   width: 100%;
   display: flex;
   justify-content: center;
   margin-top: 2em;
   margin-bottom: 48px;
 }
-.social_buttons button{
+.social-buttons button{
   display: flex;
   background-color: #f2f2f2;
   width: 30%;
@@ -164,13 +164,13 @@ h2
   border: 1px solid gray;
   border-radius: 5px;
 } 
-.social_buttons button img{
+.social-buttons button img{
   width: 24px;
   height: 24px;
   margin-right: 10px;
   position: relative;
 }
-.social_buttons button span{
+.social-buttons button span{
   font-family: "Montserrat", sans-serif;
   font-size: 1em;
   font-weight: 300;
