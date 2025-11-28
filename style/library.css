@@ -16,7 +16,7 @@ ul {
 }
 
 .container {
-    width: 90%; 
+    width: 95%; 
     max-width: 1700px;
     margin: 0 auto;
     padding-top: 20px;
@@ -63,6 +63,7 @@ ul {
     padding-bottom: 20px;
     padding-top: 10px;
     border-bottom: 1px solid #666666;
+
 }
 
 .table-content .version nav h2 {
@@ -92,7 +93,6 @@ ul {
     padding: 5px;
     width: 400px;
     height: auto;
-
 }
 
 .details .history h2{
@@ -111,4 +111,28 @@ ul {
 
 .table-content .details .history ul li a:hover {
     color: blue;
+}
+
+@media screen and (max-width: 768px) {
+
+    .table-content .version nav {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+
+    .table-content .version nav ul {
+        flex-wrap: wrap;
+        gap: 15px;
+        justify-content: flex-start;
+    }
+
+    .details {
+        flex-direction: column;
+    }
+
+    .details .history {
+        width: 100%;
+        height: auto;
+    }
 }
