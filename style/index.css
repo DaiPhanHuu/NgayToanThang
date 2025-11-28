@@ -21,6 +21,7 @@ body a {
   height: auto;
   margin-bottom: 24px;
 }
+
 .banner img {
   width: 100%;
   height: auto;
@@ -206,6 +207,12 @@ body a {
 }
 
 @media (min-width: 768px) and (max-width: 1024px) {
+  .banner {
+    width: 100%;
+    height: auto;
+    margin-bottom: 0px;
+  }
+
   .front-page {
     flex-direction: column;
     align-items: center;
@@ -227,14 +234,14 @@ body a {
     align-self: center;
     height: auto;
     overflow: hidden;
-    border-radius: 10px;
+    border-radius: 0px;
   }
   .slider img {
     width: 100%;
     height: 100%;
     object-fit: cover;
     object-position: center;
-    border-radius: 10px;
+    border-radius: 0px;
   }
   .slide-item-1-caption {
     font-size: 3em;
@@ -276,26 +283,26 @@ body a {
     align-items: center;
     object-position: center;
     margin: 0;
-    margin-bottom: 24px;
+    margin-bottom: 0px;
   }
   .slide-item {
     display: block;
     align-self: center;
     height: auto;
     overflow: hidden;
-    border-radius: 10px;
+    border-radius: 0px;
   }
   .slider img {
     width: 100%;
     height: 100%;
     object-fit: cover;
     object-position: center;
-    border-radius: 10px;
+    border-radius: 0px;
   }
   .slide-item-1-caption {
-    font-size: 3em;
-    top: 40px;
-    right: 40px;
+    font-size: 2em;
+    top: 20px;
+    right: 20px;
   }
   .news {
     width: 60%;
@@ -488,16 +495,16 @@ body a {
   width: 90vw;
   height: 80vh;
   justify-content: center;
-  border: #2f3640 1px solid;
+  /* border: #2f3640 1px solid; */
   border-radius: 20px;
   background-color: #2f3640;
   margin: 60px auto;
-  padding: 20px 0.5vw;
+  padding: 0 0 20px 0;
 }
 
 .people-of-the-revolution-wrapper {
   display: flex;
-  width: 90%;
+  width: 100%;
   max-width: 1650px;
   height: 50vh;
   margin: auto auto;
@@ -509,15 +516,16 @@ body a {
 .people-of-the-revolution-column,
 .people-of-the-revolution-column-2 {
   display: flex;
-  width: 100%;
   flex-grow: 1;
   padding: none;
-}
-.people-of-the-revolution-column,
-.people-of-the-revolution-column-2 img {
+  margin: none;
+  border-radius: 20px;
   width: 100%;
   height: 100%;
-  object-fit: cover;
+}
+.people-of-the-revolution-column-2 img {
+  object-fit: fill;
+  border-radius: 20px;
 }
 
 .people-of-the-revolution .caption {
@@ -529,7 +537,7 @@ body a {
   font-family: "Inter", sans-serif;
   font-size: 1.1em;
   line-height: 2.5em;
-  padding: 20px 10px 20px 20px;
+  padding: 10px 10px 10px 10px;
   color: #cccccc;
 }
 
@@ -589,17 +597,17 @@ body a {
     justify-content: center;
   }
   .people-of-the-revolution-column img {
-    object-fit: contain;
+    object-fit: fill;
   }
   .people-of-the-revolution-column-2 {
     display: none;
   }
   .people-of-the-revolution .caption h1 {
-    font-size: 1.5em;
+    font-size: 0.9em;
     line-height: 1em;
   }
   .people-of-the-revolution .caption p {
-    font-size: 0.9em;
+    font-size: 0.7em;
   }
 }
 /* TÌNH YÊU THỜI CHIẾN */
