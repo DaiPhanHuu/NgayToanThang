@@ -15,11 +15,10 @@ a {
 header {
   position: sticky;
   z-index: 99999;
-  background-color: #fff;
+  background-color: #fafafa;
   top: 0;
   width: 100%;
   box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
-  z-index: 99999;
 }
 
 .main-header {
@@ -27,18 +26,18 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0 20px; /* thay cho padding: auto (sai) */
+  padding: 0 20px;
 }
 
 .logo {
-  display: inline-block; /* để khung co theo chữ */
-  width: fit-content; /* khung đúng bằng nội dung */
-
-  font-size: 28px;
+  display: inline-block;
+  width: fit-content;
+  padding-top: 10px;
+  padding-bottom: 15px;
+  font-size: 65px;
   font-family: "Pinyon Script";
   text-align: center;
-
-  line-height: 1; /* tránh bị lệch dọc */
+  line-height: 1;
 }
 
 .main-nav {
@@ -156,9 +155,12 @@ header {
 .mobile-nav-menu {
   display: none;
 }
-@media (max-width: 1350px) {
+@media (max-width: 1600px) {
   .search-box input {
     display: none;
+  }
+  .logo {
+    font-size: 40px;
   }
 }
 @media (max-width: 1024px) {
@@ -166,7 +168,9 @@ header {
   .user-section {
     display: none;
   }
-
+  .logo {
+    font-size: 30px;
+  }
   .hamburger-toggle {
     display: block;
     background: none;
@@ -231,59 +235,52 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    position: relative; /* Quan trọng để căn giữa logo */
+    position: relative;
     padding: 10px 20px;
   }
 
-  /* 1. Đưa Logo vào giữa */
   .header-logo,
   .logo {
-    order: 2; /* Thứ tự hiển thị */
+    order: 2;
     position: absolute;
     left: 50%;
-    transform: translateX(-50%); /* Căn chính giữa tuyệt đối */
+    transform: translateX(-50%);
   }
 
-  /* 2. Đưa Hamburger Menu và các icon chức năng sang trái */
   .header-menu,
   .hamburger-icon,
   .menu-toggle {
-    order: 1; /* Lên đầu tiên bên trái */
-    margin-right: auto; /* Đẩy các phần tử khác ra xa nếu cần */
+    order: 1;
+    margin-right: auto;
   }
 
-  /* Các thành phần bên phải */
   .header-actions,
   .user-info {
     order: 3;
   }
 
-  /* YÊU CẦU 3: Cấu trúc Sidebar & Transition mượt mà */
   .mobile-nav-menu {
-    display: flex; /* Đổi thành flex để căn chỉnh dọc */
+    display: flex;
     flex-direction: column;
     position: fixed;
     top: 0;
     left: 0;
-    width: 300px; /* Chiều rộng sidebar */
+    width: 300px;
     height: 100vh;
     background-color: #fff;
-    z-index: 10000;
+    z-index: 100000;
     box-shadow: 2px 0 10px rgba(0, 0, 0, 0.1);
 
-    /* Hiệu ứng trượt: Mặc định ẩn sang trái (-100%) */
     transform: translateX(-100%);
     transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
 
-    padding: 0; /* Reset padding để header sidebar sát lề */
+    padding: 0;
   }
 
-  /* Class này sẽ được JS thêm vào để hiện menu */
   .mobile-nav-menu.active {
     transform: translateX(0);
   }
 
-  /* --- Style cho YÊU CẦU 1: Sidebar Header --- */
   .sidebar-header {
     display: flex;
     justify-content: space-between;
@@ -294,7 +291,7 @@ header {
   }
 
   .sidebar-logo {
-    height: 40px; /* Chỉnh kích thước logo vừa vặn */
+    height: 40px;
     width: auto;
     font-size: 24px;
     max-width: 240px;
@@ -313,12 +310,11 @@ header {
     height: 24px;
   }
 
-  /* --- Style cho YÊU CẦU 2: User Info Section --- */
   .sidebar-user-section {
     display: flex;
     align-items: center;
     padding: 20px;
-    background-color: #f9f9f9; /* Màu nền nhẹ phân biệt */
+    background-color: #f9f9f9;
     gap: 15px;
   }
 
@@ -349,10 +345,9 @@ header {
   }
 
   .user-info-text .account-settings:hover {
-    color: #d32f2f; /* Màu đỏ khi hover */
+    color: #d32f2f;
   }
 
-  /* --- Tinh chỉnh lại danh sách menu bên dưới --- */
   .sidebar-links {
     list-style: none;
     padding: 0;
@@ -376,7 +371,6 @@ header {
     padding: 0 20px;
   }
 
-  /* Overlay (Lớp phủ đen mờ) */
   .menu-overlay {
     position: fixed;
     top: 0;

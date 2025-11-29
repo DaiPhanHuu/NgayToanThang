@@ -404,6 +404,15 @@
       <img src="../assets/main-padorama.png" alt="Padorama" />
     </div>
 
+
+    <script src="../js/news.js"></script>
+    <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      if (window.newsSystem) {
+        window.newsSystem.renderNews();
+      }
+    });
+    </script>
     <div id="footer"></div>
     <script src="../js/Header-Footer.js"></script>
   </body>
