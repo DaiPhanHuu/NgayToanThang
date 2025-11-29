@@ -1,115 +1,129 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Thông tin tài khoản</title>
-    <link rel="stylesheet" href="../style/account_info.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Pinyon+Script&family=Playball&display=swap" rel="stylesheet">
-
-</head>
-<body>
+    <link rel="stylesheet" href="../style/account_info.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Pinyon+Script&family=Playball&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
     <div id="header"></div>
     <main class="account-container">
-        <section class="account-content">
-            <h1>Thông tin tài khoản</h1>
+      <section class="account-content">
+        <h1>Thông tin tài khoản</h1>
 
-            <div class="info-section">
-                <div class="info-details">
-                    <div class="info-label">Ảnh đại diện</div>
-                    <img src="../assets/main-CheLanVien.png" alt="Ảnh đại diện" class="avatar">
+        <div class="info-section">
+          <div class="info-details">
+            <div class="info-label">Ảnh đại diện</div>
+            <img
+              src="../assets/main-CheLanVien.png"
+              alt="Ảnh đại diện"
+              class="avatar"
+            />
+          </div>
+          <a href="#">Thay đổi ảnh đại diện</a>
+        </div>
+
+        <div class="info-section">
+          <div class="info-details">
+            <div class="info-label">Họ và tên</div>
+            <div class="info-value">Chế Lan Viên</div>
+          </div>
+          <a href="#">Thay đổi</a>
+        </div>
+
+        <div class="info-section">
+          <div class="info-details">
+            <div class="info-label">Email</div>
+            <div class="info-value">HeartUnderBlade@gmail.com</div>
+          </div>
+          <a href="#">Thay đổi</a>
+        </div>
+
+        <div class="info-section">
+          <div class="info-details">
+            <div class="info-label">Mật khẩu</div>
+            <div class="info-value">**********************</div>
+          </div>
+          <a href="#">Thay đổi</a>
+        </div>
+
+        <div class="linked-accounts info-section">
+          <div class="info-details">
+            <h2>Kết nối tài khoản</h2>
+            <p>
+              Kết nối tài khoản của bạn với Google, Facebook hoặc Apple để đăng
+              nhập bằng những tài khoản này.
+            </p>
+
+            <div class="social-links-list">
+              <div class="social-link-item">
+                <div class="social-provider">
+                  <img src="../assets/google-icon.png" alt="google-icon" />
+                  <span>Google</span>
                 </div>
-                <a href="#">Thay đổi ảnh đại diện</a>
-            </div>
-
-            <div class="info-section">
-                <div class="info-details">
-                    <div class="info-label">Họ và tên</div>
-                    <div class="info-value">Kiss-shot Acerola-Orion Heart-Under-Blade</div>
+                <a href="#" class="disconnect">Ngắt kết nối</a>
+              </div>
+              <div class="social-link-item">
+                <div class="social-provider">
+                  <img src="../assets/facebook-icon.png" alt="facebook-icon" />
+                  <span>Facebook</span>
                 </div>
-                <a href="#">Thay đổi</a>
-            </div>
-
-            <div class="info-section">
-                <div class="info-details">
-                    <div class="info-label">Email</div>
-                    <div class="info-value">HeartUnderBlade@gmail.com</div>
+                <a href="#" class="connect">Kết nối</a>
+              </div>
+              <div class="social-link-item">
+                <div class="social-provider">
+                  <img src="../assets/Apple_logo_black.svg" alt="Apple-icon" />
+                  <span>Apple</span>
                 </div>
-                <a href="#">Thay đổi</a>
+                <a href="#" class="connect">Kết nối</a>
+              </div>
             </div>
+          </div>
+        </div>
+      </section>
 
-            <div class="info-section">
-                <div class="info-details">
-                    <div class="info-label">Mật khẩu</div>
-                    <div class="info-value">**********************</div>
-                </div>
-                <a href="#">Thay đổi</a>
+      <aside class="account-sidebar">
+        <div class="sidebar-card">
+          <div class="user-profile">
+            <img
+              src="../assets/main-CheLanVien.png"
+              alt="Avatar"
+              class="avatar"
+            />
+            <div class="user-profile-info">
+              <div class="name">Chế Lan Viên</div>
+              <div class="last-access">Truy cập lần cuối 12/5/2025</div>
             </div>
+          </div>
+          <nav class="sidebar-nav">
+            <ul>
+              <li><a href="#" class="active">Thông tin chung</a></li>
+              <li><a href="#">Tin đã lưu</a></li>
+              <li><a href="#">Tin đã xem</a></li>
+              <li><a href="#">Bài viết đã đăng</a></li>
+              <li><a href="#">Bài viết đã chia sẻ</a></li>
+              <li><a href="#">Ý kiến đã chia sẻ của bạn(0)</a></li>
+            </ul>
+          </nav>
+          <a href="#" class="logout-link">
+            <span>Đăng xuất</span>
+          </a>
+        </div>
 
-            <div class="linked-accounts info-section">
-                <div class="info-details">
-                    <h2>Kết nối tài khoản</h2>
-                    <p>Kết nối tài khoản của bạn với Google, Facebook hoặc Apple để đăng nhập bằng những tài khoản này.</p>
-                    
-                    <div class="social-links-list">
-                        <div class="social-link-item">
-                            <div class="social-provider">
-                                <img src="../assets/google-icon.png" alt="google-icon">
-                                <span>Google</span>
-                            </div>
-                            <a href="#" class="disconnect">Ngắt kết nối</a>
-                        </div>
-                        <div class="social-link-item">
-                            <div class="social-provider">
-                                <img src="../assets/facebook-icon.png" alt="facebook-icon">
-                                <span>Facebook</span>
-                            </div>
-                            <a href="#" class="connect">Kết nối</a>
-                        </div>
-                        <div class="social-link-item">
-                            <div class="social-provider">
-                                <img src="../assets/Apple_logo_black.svg" alt="Apple-icon">
-                                <span>Apple</span>
-                            </div>
-                            <a href="#" class="connect">Kết nối</a>
-                        </div>
-                    </div>
-                </div>
-            </div>   
-        </section>
-
-        <aside class="account-sidebar">
-            <div class="sidebar-card">
-                <div class="user-profile">
-                    <img src="../assets/main-CheLanVien.png" alt="Avatar" class="avatar">
-                    <div class="user-profile-info">
-                        <div class="name">Kiss-shot Acerola-Orion Heart-Under-Blade</div>
-                        <div class="last-access">Truy cập lần cuối 12/5/2025</div>
-                    </div>
-                </div>
-                <nav class="sidebar-nav">
-                    <ul>
-                        <li><a href="#" class="active">Thông tin chung</a></li>
-                        <li><a href="#">Tin đã lưu</a></li>
-                        <li><a href="#">Tin đã xem</a></li>
-                        <li><a href="#">Bài viết đã đăng</a></li>
-                        <li><a href="#">Bài viết đã chia sẻ</a></li>
-                        <li><a href="#">Ý kiến đã chia sẻ của bạn(0)</a></li>
-                    </ul>
-                </nav>
-                <a href="#" class="logout-link">
-                    <span>Đăng xuất</span>
-                </a>
-            </div>
-
-            <div class="support-box">
-                Nếu cần hỗ trợ, xin liên hệ: <br> <a href="mailto:ngaytoanthang@support.vn">ngaytoanthang@support.vn</a>
-            </div>
-        </aside>
+        <div class="support-box">
+          Nếu cần hỗ trợ, xin liên hệ: <br />
+          <a href="mailto:ngaytoanthang@support.vn">ngaytoanthang@support.vn</a>
+        </div>
+      </aside>
     </main>
     <div id="footer"></div>
     <script src="../js/Header-Footer.js"></script>
-</body>
+  </body>
 </html>

@@ -228,10 +228,9 @@ a.disconnect {
 }
 
 @media (max-width: 768px) {
-    body {
+    .account-container {
         padding: 1rem;
     }
-
     .account-content {
         padding: 1.5rem;      
     }
