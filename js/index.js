@@ -1,234 +1,157 @@
-// Dữ liệu nhà văn
-const writers = [
-  {
-    name: "Tố Hữu",
-    role: "Nhà thơ cách mạng",
-    image: "../assets/main-ToHuu.png",
-    quote: "Từ ấy trong tôi bừng nắng hạ<br />Mặt trời chân lý chói qua tim",
-  },
-  {
-    name: "Xuân Diệu",
-    role: "Nhà Thơ",
-    image: "../assets/main-XuanDieu.png",
-    quote:
-      "Tôi cùng xương thịt với nhân dân của tôi<br />Cùng đổ mồ hôi, cùng sôi giọt máu<br />Tôi sống với cuộc đời chiến đấu<br />Của triệu người yêu dấu gian lao",
-  },
-  {
-    name: "Chế Lan Viên",
-    role: "Nhà Thơ",
-    image: "../assets/main-CheLanVien.png",
-    quote:
-      "Chẳng phải lật sách nào ra tìm hiểu Bác<br />Bác sống trong ta, Bác ở giữa đời",
-  },
-  {
-    name: "Nguyễn Đình Thi",
-    role: "Nhà Thơ",
-    image: "../assets/main-NguyenDinhThi.png",
-    quote:
-      "Nước chúng ta<br />Nước những người chưa bao giờ khuất<br />Đêm đêm rì rầm trong tiếng đất<br />Những buổi ngày xưa vọng nói về",
-  },
-  {
-    name: "Tố Hữu",
-    role: "Nhà thơ cách mạng",
-    image: "../assets/main-ToHuu.png",
-    quote: "Từ ấy trong tôi bừng nắng hạ<br />Mặt trời chân lý chói qua tim",
-  },
-  {
-    name: "Xuân Diệu",
-    role: "Nhà Thơ",
-    image: "../assets/main-XuanDieu.png",
-    quote:
-      "Tôi cùng xương thịt với nhân dân của tôi<br />Cùng đổ mồ hôi, cùng sôi giọt máu<br />Tôi sống với cuộc đời chiến đấu<br />Của triệu người yêu dấu gian lao",
-  },
-  {
-    name: "Chế Lan Viên",
-    role: "Nhà Thơ",
-    image: "../assets/main-CheLanVien.png",
-    quote:
-      "Chẳng phải lật sách nào ra tìm hiểu Bác<br />Bác sống trong ta, Bác ở giữa đời",
-  },
-  {
-    name: "Nguyễn Đình Thi",
-    role: "Nhà Thơ",
-    image: "../assets/main-NguyenDinhThi.png",
-    quote:
-      "Nước chúng ta<br />Nước những người chưa bao giờ khuất<br />Đêm đêm rì rầm trong tiếng đất<br />Những buổi ngày xưa vọng nói về",
-  },
-  {
-    name: "Tố Hữu",
-    role: "Nhà thơ cách mạng",
-    image: "../assets/main-ToHuu.png",
-    quote: "Từ ấy trong tôi bừng nắng hạ<br />Mặt trời chân lý chói qua tim",
-  },
-  {
-    name: "Xuân Diệu",
-    role: "Nhà Thơ",
-    image: "../assets/main-XuanDieu.png",
-    quote:
-      "Tôi cùng xương thịt với nhân dân của tôi<br />Cùng đổ mồ hôi, cùng sôi giọt máu<br />Tôi sống với cuộc đời chiến đấu<br />Của triệu người yêu dấu gian lao",
-  },
-  {
-    name: "Chế Lan Viên",
-    role: "Nhà Thơ",
-    image: "../assets/main-CheLanVien.png",
-    quote:
-      "Chẳng phải lật sách nào ra tìm hiểu Bác<br />Bác sống trong ta, Bác ở giữa đời",
-  },
-  {
-    name: "Nguyễn Đình Thi",
-    role: "Nhà Thơ",
-    image: "../assets/main-NguyenDinhThi.png",
-    quote:
-      "Nước chúng ta<br />Nước những người chưa bao giờ khuất<br />Đêm đêm rì rầm trong tiếng đất<br />Những buổi ngày xưa vọng nói về",
-  },
-  {
-    name: "Tố Hữu",
-    role: "Nhà thơ cách mạng",
-    image: "../assets/main-ToHuu.png",
-    quote: "Từ ấy trong tôi bừng nắng hạ<br />Mặt trời chân lý chói qua tim",
-  },
-  {
-    name: "Xuân Diệu",
-    role: "Nhà Thơ",
-    image: "../assets/main-XuanDieu.png",
-    quote:
-      "Tôi cùng xương thịt với nhân dân của tôi<br />Cùng đổ mồ hôi, cùng sôi giọt máu<br />Tôi sống với cuộc đời chiến đấu<br />Của triệu người yêu dấu gian lao",
-  },
-  {
-    name: "Chế Lan Viên",
-    role: "Nhà Thơ",
-    image: "../assets/main-CheLanVien.png",
-    quote:
-      "Chẳng phải lật sách nào ra tìm hiểu Bác<br />Bác sống trong ta, Bác ở giữa đời",
-  },
-  {
-    name: "Nguyễn Đình Thi",
-    role: "Nhà Thơ",
-    image: "../assets/main-NguyenDinhThi.png",
-    quote:
-      "Nước chúng ta<br />Nước những người chưa bao giờ khuất<br />Đêm đêm rì rầm trong tiếng đất<br />Những buổi ngày xưa vọng nói về",
-  },
-];
+document.addEventListener("DOMContentLoaded", function () {
+  console.log("Website loaded successfully!");
 
-let currentIndex = 0;
-const itemsPerPage = 4;
-
-// Hàm khởi tạo carousel nhà văn
-function initializeWritersCarousel() {
-  const writerItems = document.querySelectorAll(".writer-item");
-  const navLeft = document.querySelector(".gw-nav-left");
-  const navRight = document.querySelector(".gw-nav-right");
+  // --- 1. SLIDER GREAT WRITERS (Tự động lướt 3s) ---
+  const track = document.getElementById("writerTrack");
+  const prevBtn = document.getElementById("prevBtn");
+  const nextBtn = document.getElementById("nextBtn");
   const dots = document.querySelectorAll(".gw-dot");
 
-  if (!writerItems.length || !navLeft || !navRight || !dots.length) {
-    return;
+  if (track) {
+    const items = track.querySelectorAll(".writer-item");
+    if (items.length > 0) {
+      let currentIndex = 0;
+      let autoSlideInterval;
+
+      // Hàm tính số items hiển thị dựa trên màn hình
+      function getVisibleItems() {
+        const width = window.innerWidth;
+        if (width <= 560) return 1; // Mobile: 1 item
+        if (width <= 1024) return 2; // Tablet: 2 items
+        return 4; // Desktop: 4 items
+      }
+
+      function goToSlide(index) {
+        const visibleItems = getVisibleItems();
+        const maxIndex = Math.max(0, items.length - visibleItems);
+
+        // Kiểm tra giới hạn
+        if (index > maxIndex) {
+          currentIndex = 0;
+        } else if (index < 0) {
+          currentIndex = maxIndex;
+        } else {
+          currentIndex = index;
+        }
+
+        // Lấy chiều rộng hiện tại của 1 item
+        const itemWidth = items[0].offsetWidth;
+
+        // Trượt track
+        track.style.transform = `translateX(-${currentIndex * itemWidth}px)`;
+
+        // Cập nhật dots
+        updateDots();
+      }
+
+      function updateDots() {
+        const visibleItems = getVisibleItems();
+        const totalPages = Math.ceil(items.length / visibleItems);
+        const currentPage = Math.floor(currentIndex / visibleItems);
+
+        dots.forEach((dot, i) => {
+          if (i < totalPages) {
+            dot.style.display = "block";
+            dot.classList.toggle("active", i === currentPage);
+          } else {
+            dot.style.display = "none";
+          }
+        });
+      }
+
+      // Tự động chạy mỗi 3 giây
+      function startAutoSlide() {
+        clearInterval(autoSlideInterval);
+        autoSlideInterval = setInterval(() => {
+          const visibleItems = getVisibleItems();
+          goToSlide(currentIndex + visibleItems);
+        }, 3000);
+      }
+
+      // Xử lý nút Previous
+      if (prevBtn) {
+        prevBtn.addEventListener("click", () => {
+          const visibleItems = getVisibleItems();
+          goToSlide(currentIndex - visibleItems);
+          startAutoSlide(); // Reset auto slide
+        });
+      }
+
+      // Xử lý nút Next
+      if (nextBtn) {
+        nextBtn.addEventListener("click", () => {
+          const visibleItems = getVisibleItems();
+          goToSlide(currentIndex + visibleItems);
+          startAutoSlide(); // Reset auto slide
+        });
+      }
+
+      // Xử lý click vào dots
+      dots.forEach((dot, i) => {
+        dot.addEventListener("click", () => {
+          const visibleItems = getVisibleItems();
+          goToSlide(i * visibleItems);
+          startAutoSlide(); // Reset auto slide
+        });
+      });
+
+      // Xử lý khi resize màn hình
+      window.addEventListener("resize", () => {
+        track.style.transition = "none";
+        goToSlide(currentIndex);
+        setTimeout(() => {
+          track.style.transition = "transform 0.5s ease-in-out";
+        }, 50);
+      });
+
+      // Khởi động
+      startAutoSlide();
+      updateDots();
+    }
   }
 
-  // Hàm cập nhật hiển thị nhà văn
-  function updateWriters() {
-    writerItems.forEach((item, index) => {
-      const writerIndex = (currentIndex + index) % writers.length;
-      const writer = writers[writerIndex];
-
-      const img = item.querySelector("img");
-      const paragraphs = item.querySelectorAll("p");
-
-      img.src = writer.image;
-      img.alt = `Nhà văn ${writer.name}`;
-      paragraphs[0].textContent = writer.name;
-      paragraphs[1].textContent = writer.role;
-      paragraphs[2].innerHTML = `"${writer.quote}"`;
-    });
-
-    updateDots();
-  }
-
-  // Hàm cập nhật dots
-  function updateDots() {
-    dots.forEach((dot, index) => {
-      dot.classList.toggle(
-        "active",
-        index === Math.floor(currentIndex / itemsPerPage) % dots.length
-      );
-    });
-  }
-
-  // Xử lý click nút trái (previous)
-  navLeft.addEventListener("click", () => {
-    currentIndex = (currentIndex - 1 + writers.length) % writers.length;
-    updateWriters();
-  });
-
-  // Xử lý click nút phải (next)
-  navRight.addEventListener("click", () => {
-    currentIndex = (currentIndex + 1) % writers.length;
-    updateWriters();
-  });
-
-  // Xử lý click vào dots
-  dots.forEach((dot, index) => {
-    dot.addEventListener("click", () => {
-      currentIndex = index * itemsPerPage;
-      updateWriters();
-    });
-  });
-
-  updateDots();
-}
-
-// Animation đếm số cho numbers-dont-lie
-function initializeStatsCounter() {
-  const numberItems = document.querySelectorAll(
-    ".numbers-dont-lie .number-item h2"
-  );
+  // --- 2. NUMBER ANIMATION (Hiệu ứng nhảy số) ---
+  const numberSection = document.querySelector(".numbers-dont-lie");
+  const numberItems = document.querySelectorAll(".number-item h2");
   let animated = false;
 
-  function animateCounter(element) {
-    const text = element.textContent;
-    const numberStr = text.replace(/[^0-9]/g, "");
-    const target = parseInt(numberStr);
-    const hasPlusSign = text.includes("+");
+  function animateValue(obj, start, end, duration) {
+    let startTimestamp = null;
+    const step = (timestamp) => {
+      if (!startTimestamp) startTimestamp = timestamp;
+      const progress = Math.min((timestamp - startTimestamp) / duration, 1);
 
-    const duration = 2000;
-    const increment = target / (duration / 16);
-    let current = 0;
+      // Format số kiểu 1.000.000
+      const currentVal = Math.floor(progress * (end - start) + start);
+      obj.innerHTML = currentVal.toLocaleString("vi-VN") + "+";
 
-    const timer = setInterval(() => {
-      current += increment;
-      if (current >= target) {
-        const formatted = target.toLocaleString("de-DE");
-        element.textContent = formatted + (hasPlusSign ? "+" : "");
-        clearInterval(timer);
-      } else {
-        const formatted = Math.floor(current).toLocaleString("de-DE");
-        element.textContent = formatted + (hasPlusSign ? "+" : "");
+      if (progress < 1) {
+        window.requestAnimationFrame(step);
       }
-    }, 16);
+    };
+    window.requestAnimationFrame(step);
   }
 
   function checkScroll() {
-    if (animated) return;
+    if (animated || !numberSection) return;
 
-    const numbersSection = document.querySelector(".numbers-dont-lie");
-    if (!numbersSection) return;
+    // Kiểm tra vị trí scroll
+    const rect = numberSection.getBoundingClientRect();
+    const windowHeight =
+      window.innerHeight || document.documentElement.clientHeight;
 
-    const sectionTop = numbersSection.getBoundingClientRect().top;
-    const windowHeight = window.innerHeight;
-
-    if (sectionTop < windowHeight * 0.75) {
+    // Nếu section xuất hiện trong màn hình
+    if (rect.top <= windowHeight * 0.8) {
       animated = true;
-      numberItems.forEach((element) => {
-        animateCounter(element);
+      numberItems.forEach((item) => {
+        const text = item.innerText.replace(/\./g, "").replace(/\+/g, "");
+        const target = parseInt(text);
+        if (!isNaN(target)) {
+          animateValue(item, 0, target, 2000);
+        }
       });
     }
   }
 
   window.addEventListener("scroll", checkScroll);
-  checkScroll();
-}
-
-// Khởi tạo tất cả khi DOM ready
-document.addEventListener("DOMContentLoaded", () => {
-  initializeWritersCarousel();
-  initializeStatsCounter();
 });
