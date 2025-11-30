@@ -92,7 +92,6 @@ Promise.all([
 
         const tenTinh = feature.properties.ten_tinh;
         const soLieu = feature.properties.so_liet_si.toLocaleString("vi-VN");
-        // THAY ĐỔI 1: Đổi lại thành bindPopup
         layer.bindPopup(
           `<b>${tenTinh}</b><br>Số liệt sỹ: ${
             soLieu > 0 ? soLieu : "Không có dữ liệu"
@@ -148,7 +147,6 @@ Promise.all([
       return div;
     };
 
-    // THAY ĐỔI 2: Thêm tên 2 quần đảo (dạng in chìm)
     const islandLabelOptions = {
       permanent: true, // Luôn hiển thị, không cần hover
       direction: "center", // Căn giữa tại tọa độ

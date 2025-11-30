@@ -1,7 +1,6 @@
 document.addEventListener("DOMContentLoaded", function () {
   console.log("Website loaded successfully!");
 
-  // --- 1. SLIDER GREAT WRITERS (Tự động lướt 3s) ---
   const track = document.getElementById("writerTrack");
   const prevBtn = document.getElementById("prevBtn");
   const nextBtn = document.getElementById("nextBtn");
@@ -13,19 +12,17 @@ document.addEventListener("DOMContentLoaded", function () {
       let currentIndex = 0;
       let autoSlideInterval;
 
-      // Hàm tính số items hiển thị dựa trên màn hình
       function getVisibleItems() {
         const width = window.innerWidth;
-        if (width <= 560) return 1; // Mobile: 1 item
-        if (width <= 1024) return 2; // Tablet: 2 items
-        return 4; // Desktop: 4 items
+        if (width <= 560) return 1;
+        if (width <= 1024) return 2;
+        return 4;
       }
 
       function goToSlide(index) {
         const visibleItems = getVisibleItems();
         const maxIndex = Math.max(0, items.length - visibleItems);
 
-        // Kiểm tra giới hạn
         if (index > maxIndex) {
           currentIndex = 0;
         } else if (index < 0) {
@@ -34,13 +31,9 @@ document.addEventListener("DOMContentLoaded", function () {
           currentIndex = index;
         }
 
-        // Lấy chiều rộng hiện tại của 1 item
         const itemWidth = items[0].offsetWidth;
 
-        // Trượt track
         track.style.transform = `translateX(-${currentIndex * itemWidth}px)`;
-
-        // Cập nhật dots
         updateDots();
       }
 
@@ -82,7 +75,7 @@ document.addEventListener("DOMContentLoaded", function () {
         nextBtn.addEventListener("click", () => {
           const visibleItems = getVisibleItems();
           goToSlide(currentIndex + visibleItems);
-          startAutoSlide(); // Reset auto slide
+          startAutoSlide();
         });
       }
 
@@ -91,7 +84,7 @@ document.addEventListener("DOMContentLoaded", function () {
         dot.addEventListener("click", () => {
           const visibleItems = getVisibleItems();
           goToSlide(i * visibleItems);
-          startAutoSlide(); // Reset auto slide
+          startAutoSlide();
         });
       });
 
@@ -104,13 +97,11 @@ document.addEventListener("DOMContentLoaded", function () {
         }, 50);
       });
 
-      // Khởi động
       startAutoSlide();
       updateDots();
     }
   }
 
-  // --- 2. NUMBER ANIMATION (Hiệu ứng nhảy số) ---
   const numberSection = document.querySelector(".numbers-dont-lie");
   const numberItems = document.querySelectorAll(".number-item h2");
   let animated = false;
@@ -121,7 +112,6 @@ document.addEventListener("DOMContentLoaded", function () {
       if (!startTimestamp) startTimestamp = timestamp;
       const progress = Math.min((timestamp - startTimestamp) / duration, 1);
 
-      // Format số kiểu 1.000.000
       const currentVal = Math.floor(progress * (end - start) + start);
       obj.innerHTML = currentVal.toLocaleString("vi-VN") + "+";
 
@@ -135,12 +125,10 @@ document.addEventListener("DOMContentLoaded", function () {
   function checkScroll() {
     if (animated || !numberSection) return;
 
-    // Kiểm tra vị trí scroll
     const rect = numberSection.getBoundingClientRect();
     const windowHeight =
       window.innerHeight || document.documentElement.clientHeight;
 
-    // Nếu section xuất hiện trong màn hình
     if (rect.top <= windowHeight * 0.8) {
       animated = true;
       numberItems.forEach((item) => {

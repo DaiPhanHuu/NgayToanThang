@@ -40,8 +40,6 @@ body a {
 
 .slider {
   width: 70%;
-  /* margin-left: 0.5vw; */
-  /* margin-right: 0.25vw; */
   display: flex;
   flex-direction: column;
 }
@@ -412,24 +410,21 @@ body a {
 }
 
 @media screen and (max-width: 1024px) {
-  /* 1. Đưa cột News xuống dưới Slider và mở rộng 100% */
   .front-page {
-    flex-direction: column; /* Xếp dọc */
-    padding: 0 15px; /* Thêm lề 2 bên cho thoáng */
+    flex-direction: column;
+    padding: 0 15px;
   }
 
   .slider,
   .news {
-    width: 100%; /* Chiếm hết chiều ngang */
+    width: 100%;
     margin: 0;
     margin-bottom: 12px;
-    border-left: none; /* Bỏ đường kẻ dọc ngăn cách cũ nếu có */
-    /* padding-left: 15px; */
+    border-left: none;
   }
 
-  /* 2. HEADER: Làm nổi bật tiêu đề "Tin tức mới" */
   .news-header {
-    border-bottom: 2px solid #9f224e; /* Màu đỏ thẫm kiểu báo chí */
+    border-bottom: 2px solid #9f224e;
     padding-bottom: 10px;
     margin-bottom: 20px;
     display: flex;
@@ -451,11 +446,10 @@ body a {
     text-decoration: none;
   }
 
-  /* 3. TIN CHÍNH (MAIN ITEM): Ảnh lớn, chữ dưới */
   .news-main-item {
     margin-bottom: 25px;
     padding-bottom: 20px;
-    border-bottom: 1px solid #e5e5e5; /* Đường kẻ mờ phân cách */
+    border-bottom: 1px solid #e5e5e5;
   }
 
   .news-main-item img {
@@ -478,41 +472,37 @@ body a {
     color: #757575;
   }
 
-  /* 4. TIN DANH SÁCH (LIST ITEM): Ảnh trái - Chữ phải (QUAN TRỌNG) */
   .news-item {
-    display: flex; /* Dàn ngang */
+    display: flex;
     flex-direction: row;
     align-items: flex-start;
-    gap: 15px; /* Khoảng cách giữa ảnh và chữ */
+    gap: 15px; 
     margin-bottom: 20px;
     padding-bottom: 20px;
-    border-bottom: 1px solid #eee; /* Đường kẻ mờ giữa các tin */
+    border-bottom: 1px solid #eee;
   }
 
-  /* Xử lý ảnh thumbnail nhỏ bên trái */
   .news-item img {
-    width: 120px; /* Chiều rộng cố định */
-    height: 80px; /* Chiều cao cố định */
+    width: 120px;
+    height: 80px;
     object-fit: cover;
     border-radius: 4px;
-    flex-shrink: 0; /* Không cho ảnh bị co lại */
+    flex-shrink: 0;
   }
 
-  /* Xử lý phần nội dung bên phải */
   .news-item-content {
-    flex: 1; /* Chiếm phần còn lại */
+    flex: 1;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
   }
 
   .news-item-content h2 {
-    font-size: 16px; /* Chữ tiêu đề vừa phải */
+    font-size: 16px;
     line-height: 1.3;
     margin: 0 0 5px 0;
     font-weight: 600;
 
-    /* Cắt bớt nếu tiêu đề quá dài (tối đa 3 dòng) */
     display: -webkit-box;
     -webkit-line-clamp: 3;
     -webkit-box-orient: vertical;
@@ -530,15 +520,13 @@ body a {
     font-size: 13px;
     color: #555;
     margin: 0;
-    /* Ẩn mô tả ngắn trên mobile để gọn (giống VnExpress) */
     display: none;
   }
 }
 
-/* Tùy chỉnh thêm cho màn hình rất nhỏ (Điện thoại dọc < 480px) */
 @media screen and (max-width: 480px) {
   .news-item img {
-    width: 100px; /* Thu nhỏ ảnh chút nữa */
+    width: 100px;
     height: 70px;
   }
 
@@ -548,7 +536,6 @@ body a {
 }
 
 /* NHÀ VĂN LỖI LẠC*/
-/* Khung lớn ngoài cùng */
 .great-writers {
   max-width: 1650px;
   margin: 40px auto;
@@ -566,32 +553,27 @@ body a {
   color: black;
 }
 
-/* Khung bao chứa nút bấm và viewport */
 .slider-wrapper-relative {
   position: relative;
   width: 100%;
-  padding: 0 30px; /* Chừa chỗ cho nút bấm không đè lên ảnh */
+  padding: 0 30px;
   box-sizing: border-box;
 }
 
-/* Khung nhìn (Viewport) - Cắt phần thừa */
 .gw-viewport {
   overflow: hidden;
   width: 100%;
   border-radius: 12px;
 }
 
-/* --- ĐƯỜNG RAY TRƯỢT (QUAN TRỌNG) --- */
 .writer-track {
-  display: flex; /* Xếp thành hàng ngang */
+  display: flex;
   width: 100%;
-  transition: transform 0.5s ease-in-out; /* Hiệu ứng chuyển động mượt */
+  transition: transform 0.5s ease-in-out;
 }
 
-/* --- ITEM MẶC ĐỊNH (PC > 1024px) --- */
-/* Hiển thị 4 tác giả (25% mỗi người) */
 .writer-item {
-  flex: 0 0 25%; /* Cố định độ rộng 25% */
+  flex: 0 0 25%;
   max-width: 25%;
   padding: 0 10px;
   box-sizing: border-box;
@@ -601,7 +583,6 @@ body a {
   align-items: center;
 }
 
-/* Style ảnh và chữ */
 .writer-item img {
   width: 100px;
   height: 100px;
@@ -661,7 +642,6 @@ body a {
   right: 0;
 }
 
-/* --- DOTS (PAGINATION) --- */
 .gw-pagination {
   display: flex;
   justify-content: center;
@@ -682,14 +662,9 @@ body a {
   border-radius: 10px;
 }
 
-/* =========================================
-   RESPONSIVE (ĐIỀU CHỈNH SỐ LƯỢNG)
-   ========================================= */
-
-/* 1. TABLET (Từ 561px đến 1024px) -> HIỆN 2 TÁC GIẢ */
 @media (min-width: 561px) and (max-width: 1024px) {
   .writer-item {
-    flex: 0 0 50%; /* Chia đôi chiều rộng */
+    flex: 0 0 50%;
     max-width: 50%;
   }
 
@@ -698,18 +673,16 @@ body a {
   }
 }
 
-/* 2. MOBILE (Từ 560px trở xuống) -> HIỆN 1 TÁC GIẢ + CHUYỂN ĐỘNG */
 @media screen and (max-width: 560px) {
   .slider-wrapper-relative {
-    padding: 0; /* Bỏ padding để ảnh to hết cỡ */
+    padding: 0; 
   }
 
   .writer-item {
-    flex: 0 0 100%; /* Chiếm trọn 100% chiều ngang */
+    flex: 0 0 100%;
     max-width: 100%;
   }
 
-  /* Ẩn nút điều hướng trên mobile để dùng hiệu ứng tự trượt */
   .gw-nav {
     display: none;
   }
@@ -725,7 +698,6 @@ body a {
   width: 90vw;
   height: 80vh;
   justify-content: center;
-  /* border: #2f3640 1px solid; */
   border-radius: 20px;
   background-color: #2f3640;
   margin: 60px auto;
@@ -810,7 +782,6 @@ body a {
   text-decoration: underline;
 }
 
-/* Tablet: 768px - 1024px */
 @media (min-width: 768px) and (max-width: 1024px) {
   .people-of-the-revolution {
     padding: 50px 20px;
@@ -839,7 +810,6 @@ body a {
   }
 }
 
-/* Mobile: 360px - 767px */
 @media (min-width: 360px) and (max-width: 767px) {
   .people-of-the-revolution {
     padding: 15px;
@@ -851,7 +821,6 @@ body a {
     gap: 20px;
   }
 
-  /* Hiển thị tất cả các cột theo chiều dọc */
   .people-of-the-revolution-column,
   .people-of-the-revolution-column-2,
   .people-of-the-revolution-art-column {
@@ -885,7 +854,6 @@ body a {
   }
 }
 
-/* Small Mobile: dưới 400px */
 @media (max-width: 399px) {
   .people-of-the-revolution .caption h1 {
     font-size: 1.1em;
@@ -895,8 +863,8 @@ body a {
     font-size: 0.85em;
   }
 }
-/* TÌNH YÊU THỜI CHIẾN */
 
+/* TÌNH YÊU THỜI CHIẾN */
 .love-stories-of-the-war {
   max-width: 1650px;
   margin: 60px auto 30px auto;
@@ -982,7 +950,6 @@ body a {
   flex-grow: 1;
 }
 
-/* Tablet: 768px - 1024px */
 @media (min-width: 768px) and (max-width: 1024px) {
   .love-story-container {
     grid-template-columns: repeat(2, 1fr);
@@ -998,7 +965,6 @@ body a {
   }
 }
 
-/* Mobile: 360px - 767px */
 @media (min-width: 360px) and (max-width: 767px) {
   .love-stories-of-the-war {
     margin: 40px auto 20px auto;
@@ -1030,8 +996,8 @@ body a {
     font-size: 1.05em;
   }
 }
-/* NHỮNG CON SỐ */
 
+/* NHỮNG CON SỐ */
 .numbers-dont-lie {
   position: relative;
   width: 99vw;
@@ -1057,7 +1023,6 @@ body a {
   pointer-events: none;
 }
 
-/* Overlay để làm tối ảnh hơn */
 .numbers-dont-lie::before {
   content: "";
   position: absolute;
@@ -1071,7 +1036,6 @@ body a {
   pointer-events: none;
 }
 
-/* Tất cả nội dung nổi lên trên */
 .numbers-dont-lie h1,
 .numbers-dont-lie > p,
 .numbers-container {
@@ -1144,26 +1108,24 @@ body a {
   line-height: 1.3;
   text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.8);
 }
-/* --- RESPONSIVE RIÊNG CHO KHOẢNG 360px - 768px --- */
+
 @media screen and (max-width: 768px) {
-  /* 1. Ép Container cha thành 1 cột duy nhất */
   .numbers-container {
     display: grid;
-    grid-template-columns: 1fr !important; /* Quan trọng: Ghi đè cột PC */
+    grid-template-columns: 1fr !important;
     gap: 15px;
     width: 100%;
     padding: 0 10px;
     box-sizing: border-box;
   }
 
-  /* 2. Style cho từng ô số liệu */
   .numbers-dont-lie .number-item {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 100%; /* Sẽ nhận 100% vì selector đã đủ mạnh */
-    margin: 0; /* Reset margin của PC để tránh bị lệch */
+    width: 100%;
+    margin: 0;
     opacity: 0.8;
     background-color: #ffffff;
     border: 2px solid #e0e0e0;
@@ -1178,19 +1140,16 @@ body a {
     object-fit: cover;
   }
 
-  /* 3. Chỉnh chữ nhỏ lại để không bị tràn dòng */
   .number-item h2 {
-    font-size: 28px; /* Giảm xuống 28px cho an toàn */
+    font-size: 28px;
     margin-bottom: 5px;
-    /* color: #9f224e; */
-    word-break: break-word; /* Ngắt dòng nếu số quá dài */
+    word-break: break-word;
   }
 
   .number-item p {
     font-size: 14px;
     text-align: center;
     margin: 0;
-    /* color: #555; */
   }
 
   .number-item h1 {
@@ -1198,14 +1157,13 @@ body a {
     margin-bottom: 10px;
   }
 
-  /* 4. Căn lề khung ngoài */
   .numbers-dont-lie {
     padding: 20px 0;
     width: 100%;
   }
 }
-/* GIAI ĐOẠN LỊCH SỬ */
 
+/* GIAI ĐOẠN LỊCH SỬ */
 .historical-stage {
   width: 100%;
   max-width: 1650px;
@@ -1333,7 +1291,6 @@ body a {
   height: auto;
 }
 
-/* Tablet: 768px - 1024px */
 @media (min-width: 768px) and (max-width: 1024px) {
   .stage-container {
     grid-template-columns: repeat(2, 1fr);
@@ -1349,7 +1306,6 @@ body a {
   }
 }
 
-/* Mobile: 360px - 767px */
 @media (min-width: 360px) and (max-width: 767px) {
   .historical-stage {
     margin: 40px auto;
@@ -1381,7 +1337,6 @@ body a {
     font-size: 0.8em;
   }
 
-  /* Hiển thị tối đa 2 items trên mobile để gọn hơn */
   .stage-item:nth-child(n + 5) {
     display: none;
   }
