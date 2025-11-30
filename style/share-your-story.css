@@ -224,3 +224,154 @@ body {
     font-size: 0.7rem; 
     color: #9c9c9c;
 }
+
+
+@media (max-width: 1024px) {
+    .create-story {
+        max-width: 95%;
+        margin: 20px auto;
+    }
+    
+    .share-story .ss-text h1 {
+        font-size: 2.8rem;
+    }
+    
+    .ss-nav ul {
+        gap: 1.5rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .create-story {
+        margin: 15px auto;
+        gap: 1.5rem;
+        padding: 0 15px;
+    }
+    
+    .share-story {
+        padding: 1rem;
+        border-radius: 15px;
+    }
+    
+    .share-story .ss-text h1 {
+        font-size: 2.2rem;
+        line-height: 1.2;
+    }
+    
+    .share-story .ss-text p {
+        font-size: 1rem;
+    }
+    
+    .ss-nav {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1rem;
+    }
+    
+    .ss-nav ul {
+        flex-wrap: wrap;
+        gap: 1rem;
+    }
+    
+    .ss-nav ul li a {
+        font-size: 0.9rem;
+    }
+    
+    .main-layout {
+        flex-direction: column;
+    }
+    
+    .editor-column, .sidebar-column {
+        width: 100%;
+    }
+    
+    .editor-column {
+        padding: 0.5em 0;
+    }
+    
+    .form-group--textarea {
+        min-height: 350px;
+    }
+    
+    .sidebar--tittle {
+        font-size: 1.3rem;
+        margin-top: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .create-story {
+        margin: 10px auto;
+        gap: 1rem;
+        padding: 0 10px;
+    }
+    
+    .share-story {
+        padding: 0.8rem;
+        border-radius: 10px;
+    }
+    
+    .share-story .ss-text h1 {
+        font-size: 1.8rem;
+    }
+    
+    .share-story .ss-text p {
+        font-size: 0.9rem;
+    }
+    
+    .ss-nav .account-links {
+        width: 50px;
+        height: 50px;
+    }
+    
+    .ss-nav .account-links img {
+        width: 50px;
+        height: 50px;
+    }
+    
+    .ss-nav ul {
+        gap: 0.8rem;
+    }
+    
+    .ss-nav ul li a {
+        font-size: 0.85rem;
+    }
+    
+    .form-group--label {
+        font-size: medium;
+    }
+    
+    .form-group--input, .form-group--textarea {
+        font-size: 0.9rem;
+    }
+    
+    .form-group--textarea {
+        min-height: 300px;
+        padding: 12px;
+    }
+    
+    .sidebar--tittle {
+        font-size: 1.2rem;
+    }
+    
+    .article-item h3 {
+        font-size: 0.95rem;
+    }
+    
+    .article-item p, .article-item span {
+        font-size: 0.8rem;
+    }
+}
+
+
+@media (max-width: 360px) {
+    .share-story .ss-text h1 {
+        font-size: 1.5rem;
+    }
+    
+    .ss-nav ul {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.5rem;
+    }
+}
