@@ -1,8 +1,8 @@
 const tabs = document.querySelectorAll('.tab');
-const formSlider = document.querySelector('.form_slider');
-const loginForm = document.getElementById('login_form');
-const signupForm = document.getElementById('signup_form');
-const formWrapper = document.querySelector('.form_warpper');
+const formSlider = document.querySelector('.form-slider');
+const loginForm = document.getElementById('login-form');
+const signupForm = document.getElementById('signup-form');
+const formWrapper = document.querySelector('.form-warpper');
 window.loginHeight = 0;
 window.signupHeight = 0;
 
@@ -45,7 +45,7 @@ tabs.forEach(tab => {
     tab.classList.add('active');
 
     // Hiển thị form tương ứng
-    if (tab.id === "login_tab") {
+    if (tab.id === "login-tab") {
       loginForm.classList.add('active');
       signupForm.classList.remove('active');
       formSlider.style.transform = 'translateX(0%)';
@@ -62,7 +62,7 @@ tabs.forEach(tab => {
 window.addEventListener('resize', () => {
   calHeight();
   const activeTab = document.querySelector('.tab.active');
-  if (activeTab && activeTab.id === 'login_tab') {
+  if (activeTab && activeTab.id === 'login-tab') {
     formSlider.style.height = `${window.loginHeight}px`;
   } else {
     formSlider.style.height = `${window.signupHeight}px`;
@@ -70,7 +70,7 @@ window.addEventListener('resize', () => {
 });
 
 // Kiểm tra tính hợp lệ của form
-const submitButton = document.querySelector('.submit_button');
+const submitButton = document.querySelector('.submit-button');
 if (submitButton) {
   submitButton.addEventListener('click', (e) => {
     e.preventDefault();
