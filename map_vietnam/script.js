@@ -6,13 +6,13 @@ const map = L.map("map", {
   doubleClickZoom: false,
   dragging: false,
   touchZoom: false,
-}).setView([16, 110], window.innerWidth < 768 ? 5.2 : 5.8);
+}).setView([15, 110], window.innerWidth < 768 ? 5.2 : 5.8);
 
 // Thay đổi kích thước cửa sổ -> cập nhật lại hiển thị bản đồ
 window.addEventListener("resize", function () {
   map.invalidateSize();
   const newZoom = this.window.innerWidth < 768 ? 5.2 : 5.8;
-  map.setView([16, 108], newZoom);
+  map.setView([15, 108], newZoom);
 });
 
 // Tải đồng thời 2 file: bản đồ .geojson và dữ liệu .csv
