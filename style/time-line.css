@@ -510,59 +510,51 @@ body {
   color: #555;
 }
 
-/* --- RESPONSIVE CSS (Thêm vào cuối file time-line.css) --- */
 
-/* TABLET & MOBILE (Màn hình dưới 1024px) */
 @media screen and (max-width: 1024px) {
-  /* 1. Container chung: Giảm padding 2 bên để tăng diện tích hiển thị */
   .container {
     padding: 20px 20px;
     gap: 30px;
   }
 
-  /* 2. Phần Timeline Title */
   .title-tl > p {
-    font-size: 32px; /* Giảm size chữ tiêu đề */
+    font-size: 32px;
   }
 
-  /* 3. Khu vực Tin tức chính (ART-ETM) */
-  /* Chuyển từ hàng ngang (row) sang cột dọc (column) để các khối xếp chồng lên nhau */
   .art-etm {
     flex-direction: column;
-    height: auto; /* Quan trọng: Bỏ chiều cao cố định 756px */
+    height: auto;
     align-items: center;
     gap: 40px;
   }
 
   .js {
-    height: 600px; /* Giảm chiều cao iframe */
+    height: 600px;
   }
 
-  /* Cột tin bên trái */
   .left-news {
     width: 100%;
-    flex-direction: row; /* Tablet có thể để 2 tin nằm ngang */
+    flex-direction: row; 
     justify-content: center;
-    flex-wrap: wrap; /* Tự xuống dòng nếu không đủ chỗ */
+    flex-wrap: wrap;
   }
 
   .news1,
   .news2 {
-    width: 45%; /* Chia đôi chiều rộng */
-    min-width: 300px; /* Đảm bảo không quá nhỏ */
+    width: 45%;
+    min-width: 300px;
   }
 
   .img-news1,
   .news2 img {
-    width: 100%; /* Ảnh full chiều rộng thẻ cha */
+    width: 100%;
     height: auto;
     aspect-ratio: 16/9;
   }
 
-  /* Tin nổi bật ở giữa */
   .main-news {
     width: 100%;
-    height: auto; /* Bỏ chiều cao 50vh */
+    height: auto;
   }
 
   .main-news img {
@@ -571,20 +563,18 @@ body {
     object-fit: cover;
   }
 
-  /* Cột tin bên phải */
   .right-news {
     width: 100%;
-    height: auto; /* Bỏ chiều cao cố định */
+    height: auto;
   }
 
-  /* 4. Phần Tin tức khác (ANOTHER-NEWS) */
   .another-news {
-    flex-direction: column-reverse; /* Đảo ngược: Aside lên trên hoặc giữ nguyên tùy ý */
+    flex-direction: column-reverse;
     gap: 40px;
   }
 
   .main-info {
-    width: 100%; /* Full màn hình */
+    width: 100%;
     padding: 0;
   }
 
@@ -592,9 +582,8 @@ body {
     width: 100%;
   }
 
-  /* Phần thẻ bài viết (Main Item) */
   .main-item {
-    flex-direction: column; /* Ảnh trên, chữ dưới */
+    flex-direction: column;
     width: 100%;
     align-items: center;
   }
@@ -606,16 +595,14 @@ body {
   }
 
   .text-item {
-    width: 100%; /* Chữ full chiều rộng */
+    width: 100%;
     height: auto;
-    border-radius: 0 0 10px 10px; /* Bo góc dưới */
+    border-radius: 0 0 10px 10px;
     background: #f5f5f5;
   }
 }
 
-/* MOBILE (Màn hình dưới 767px) */
 @media screen and (max-width: 767px) {
-  /* 1. Container: Padding nhỏ nhất có thể */
   .container {
     padding: 15px 10px;
   }
@@ -625,7 +612,6 @@ body {
     line-height: 1.3;
   }
 
-  /* 2. Reset các cột tin về 100% chiều rộng */
   .left-news,
   .news1,
   .news2,
@@ -635,14 +621,12 @@ body {
     min-width: auto;
   }
 
-  /* Tin bên trái: Xếp chồng dọc thay vì ngang như Tablet */
   .left-news {
     flex-direction: column;
   }
 
-  /* 3. Tinh chỉnh Typography cho Mobile */
   .main-news h3 {
-    font-size: 20px; /* Tiêu đề nhỏ lại */
+    font-size: 20px;
     margin: 10px 0;
   }
 
@@ -651,12 +635,10 @@ body {
     font-size: 14px;
   }
 
-  /* 4. Timeline JS iframe */
   .js {
-    height: 500px; /* Giảm chiều cao trên mobile */
+    height: 500px;
   }
 
-  /* 5. Right News Items */
   .item-image img {
     width: 60px;
     height: 60px;
